@@ -69,7 +69,7 @@ passport.serializeUser(function(user, done) {
   passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://secret-bfvl.onrender.com:5000/auth/google/secrets",
+    callbackURL: "https://secret-bfvl.onrender.com/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
   },
   async (accessToken, refreshToken, profile, cb) => {
